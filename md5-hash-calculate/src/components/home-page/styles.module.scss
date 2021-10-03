@@ -1,0 +1,21 @@
+$main-width: 1127px;
+$white-text: #f4f4f4;
+
+.navContainer {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	background-color: rgb(30, 30, 30);
+}
+
+.nav {
+	width: $main-width;
+	color: $white-text;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home {
+	height: 100vh;
+}

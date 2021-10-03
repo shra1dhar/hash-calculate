@@ -1,0 +1,23 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+	background: rgb(218, 218, 218);
+	background: linear-gradient(
+		90deg,
+		rgba(218, 218, 218, 0.7301295518207283) 0%,
+		rgba(203, 226, 227, 0.5284488795518207) 48%,
+		rgba(173, 200, 213, 0.5760679271708684) 100%
+	);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
