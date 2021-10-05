@@ -17,4 +17,7 @@ const TextBox = forwardRef<HTMLTextAreaElement, Props>(({ css = '', className = 
 		</div>
 	)
 })
+
+TextBox.displayName = 'Textbox'
+
 export default TextBox
