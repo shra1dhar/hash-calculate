@@ -18,6 +18,8 @@ a {
 	text-decoration: none;
 }
 
-/* * {
-  box-sizing: border-box;
-} */
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 14px;
+	}
+}

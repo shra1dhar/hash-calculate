@@ -6,15 +6,14 @@ const About = () => {
 		<section className={styles.about} id="about">
 			<h3>What is MD5 ?</h3>
 			<p>
-				Message Digest Algorithm 5 (MD5) is a cryptographic hash algorithm that can be used to create a 128-bit string
-				value from an arbitrary length string. Although there has been insecurities identified with MD5, it is still
-				widely used. MD5 is most commonly used to verify the integrity of files. However, it is also used in other
-				security protocols and applications such as SSH, SSL, and IPSec.
+				MD5 is a cryptographic hash algorithm that can be used to create a 128-bit string. Despite the known
+				vulnerabilities MD5 is still popular. MD5 can be used to check integrity between files and string (text). It
+				also has applications in security protocols like SSH, SSL, and IPSec.
 			</p>
 			<p>
-				The MD5 hash function was originally designed for use as a secure cryptographic hash algorithm for
-				authenticating digital signatures. But MD5 has been deprecated for uses other than as a noncryptographic
-				checksum to verify data integrity and detect unintentional data corruption.
+				Initially, MD5 hash function was developed for use as a secure cryptographic hash algorithm for authenticating
+				digital signatures. Lately MD5 has been deprecated. Other cryptographic functions like Sha1 are now gaining
+				traction.
 			</p>
 		</section>
 	)

@@ -4,7 +4,6 @@ import styles from './styles.module.scss'
 import { copyTextToClipboard } from '../../../utils/copy-to-clipboard'
 
 interface Props {
-	getFocusOnLast: () => void
 	[x: string]: any
 }
 
@@ -21,24 +20,26 @@ const getStatusClass = (status: MessageStatus) => {
 	return statusClass
 }
 
-const Hashbox: FC<Props> = (restProps) => {
+const Hashbox: FC<Props> = (props) => {
 	const [copyStatus, setCopyStatus] = useState<MessageStatus>('hide')
-	const placeholder = restProps.value ? placeholderWithText : defaultPlaceholder
+	const placeholder = props.value ? placeholderWithText : defaultPlaceholder
 
 	useEffect(() => {
 		let id: NodeJS.Timeout
 		if (copyStatus === 'show') {
-			id = setTimeout(() => setCopyStatus('hide'), 800)
+			id = setTimeout(() => {
+				setCopyStatus('hide')
+			}, 800)
 		}
 		return () => clearTimeout(id)
 	}, [copyStatus])
 
 	const handleClick = async () => {
-		if (!restProps.value) {
+		if (!props.value) {
 			return
 		}
 		try {
-			await copyTextToClipboard(restProps.value)
+			await copyTextToClipboard(props.value)
 			setCopyStatus('show')
 		} catch (e) {
 			console.log(e)
@@ -50,7 +51,7 @@ const Hashbox: FC<Props> = (restProps) => {
 			<div className={styles.placeholderWrap}>{placeholder}</div>
 			<TextBox
 				readOnly
-				{...restProps}
+				{...props}
 				aria-readonly={true}
 				className={styles.pointer}
 				aria-placeholder="Type or paste text to be converted"

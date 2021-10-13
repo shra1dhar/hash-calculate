@@ -6,12 +6,9 @@ const Advantages = () => {
 		<section className={styles.advantages}>
 			<h3>Advantages of MD5</h3>
 			<ul>
-				<li>
-					MD5 algorithm is very much helpful as it is a bit easier for storing and comparing smaller hashes than the
-					large text of variable length.
-				</li>
-				<li>They are used to store passwords in 128-bit form in UNIX.</li>
-				<li>And it’s easy to develop a message digest from the original message.</li>
+				<li>MD5 algorithm gives small 32 letter string which can be used as a unique value.</li>
+				<li>MD5 is used to store passwords in 128-bit form in some UNIX based systems.</li>
+				<li>MD5 can be used to verify the checksum easily. This allows to check integrity.</li>
 			</ul>
 		</section>
 	)

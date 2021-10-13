@@ -10,8 +10,12 @@ interface Props {
 const InputBox: FC<Props> = ({ innerRef, ...restProps }) => {
 	const isTextPresent = !!restProps?.value
 
+	function focusInput() {
+		innerRef?.current?.focus()
+	}
+
 	return (
-		<div className={styles.inputContainer}>
+		<div className={`${styles.inputContainer} ${styles.bgWhite}`} onClick={focusInput}>
 			{!isTextPresent && (
 				<div className={`${styles.placeholderWrap} ${styles.cusorInherit}`}>Type or paste your text here . . .</div>
 			)}

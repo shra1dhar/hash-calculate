@@ -13,7 +13,7 @@ const TextBox = forwardRef<HTMLTextAreaElement, Props>(({ css = '', className = 
 
 	return (
 		<div className={textContainerCss}>
-			<textarea {...restProps} ref={ref} cols={32} rows={15} aria-multiline={false} className={textInputCss}></textarea>
+			<textarea {...restProps} ref={ref} cols={28} rows={12} aria-multiline={false} className={textInputCss}></textarea>
 		</div>
 	)
 })

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './styles.module.scss'
 import InputBox from './InputBox'
-import TextBox from './TextBox'
 import MD5 from 'crypto-js/md5'
 import Hashbox from './Hashbox'
 
@@ -31,17 +30,10 @@ const FormContent = () => {
 		inputRef?.current?.focus()
 	}
 
-	function getFocusOnLast() {
-		if (inputRef.current) {
-			inputRef.current.selectionStart = inputRef.current.value.length
-			inputRef.current.selectionEnd = inputRef.current.value.length
-		}
-	}
-
 	return (
 		<form className={styles.formContainer} autoComplete="off" autoCorrect="off" autoCapitalize="off">
 			<InputBox value={inputVal} onChange={handleChange} innerRef={inputRef} />
-			<Hashbox value={hashValue} {...{ getFocusOnLast }} />
+			<Hashbox value={hashValue} />
 		</form>
 	)
 }
