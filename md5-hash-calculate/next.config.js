@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const path = require('path');
+const path = require('path')
+const withPreact = require('next-plugin-preact')
 
 const securityHeaders = [
 	{
@@ -26,9 +27,9 @@ const securityHeaders = [
 		key: 'Referrer-Policy',
 		value: 'origin-when-cross-origin',
 	},
-];
+]
 
-module.exports = {
+module.exports = withPreact({
 	// async headers() {
 	// 	return [
 	// 		{
@@ -42,4 +43,4 @@ module.exports = {
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'styles')],
 	},
-};
+})
