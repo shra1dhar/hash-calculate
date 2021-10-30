@@ -9,7 +9,7 @@ const MainContent = () => {
 	return (
 		<main className={styles.mainContent}>
 			<div className={styles.innerContent}>
-				<h1 className={styles.heading}>Online MD5 hash calculator ⚡️</h1>
+				<h1 className={styles.heading}>MD5 Hash Calculate ⚡️</h1>
 				<FormContent />
 				<Intro />
 				<About />

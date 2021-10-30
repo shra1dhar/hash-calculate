@@ -48,7 +48,7 @@ Checksum Verifier, Generate MD5, Compute MD5, Calculate MD5"
 				<link rel="icon" type="image/png" sizes="32x32" href="/md5/logo/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/md5/logo/favicon-16x16.png" />
 
-				<link rel="manifest" href="/md5/logo/site.webmanifest" />
+				{/* <link rel="manifest" href="/md5/logo/site.webmanifest" /> */}
 				<link rel="mask-icon" href="/md5/logo/safari-pinned-tab.svg" color="#5bbad5" />
 				<link rel="shortcut icon" href="/md5/logo/favicon.ico" />
 
@@ -56,7 +56,7 @@ Checksum Verifier, Generate MD5, Compute MD5, Calculate MD5"
 				<meta name="msapplication-config" content="/md5/logo/browserconfig.xml" />
 				<meta name="theme-color" content="#333333" />
 
-				<title>MD5 Online Hash Calculator</title>
+				<title>MD5 Hash Calculate</title>
 			</Head>
 
 			<HomePage />
