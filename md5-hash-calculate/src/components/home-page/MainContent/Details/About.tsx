@@ -11,9 +11,9 @@ const About = () => {
 				also has applications in security protocols like SSH, SSL, and IPSec.
 			</p>
 			<p>
-				Initially, MD5 hash function was developed for use as a secure cryptographic hash algorithm for authenticating
-				digital signatures. Lately MD5 has been deprecated. Other cryptographic functions like Sha1 are now gaining
-				traction.
+				Initially, MD5 hash calculating function was developed for use as a secure cryptographic hash algorithm for
+				authenticating digital signatures. Lately MD5 has been deprecated. Other cryptographic functions like Sha1 are
+				now gaining traction.
 			</p>
 		</section>
 	)

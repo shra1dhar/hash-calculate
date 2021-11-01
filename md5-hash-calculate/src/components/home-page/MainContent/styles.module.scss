@@ -49,6 +49,10 @@ $text-color: #333;
 	cursor: pointer;
 }
 
+.cusorInherit {
+	cursor: inherit;
+}
+
 .placeholderWrap {
 	padding: 20px 40px;
 	font-size: 2.6rem;
@@ -56,6 +60,10 @@ $text-color: #333;
 	text-align: center;
 	background-color: transparent;
 	color: rgba(161, 161, 161, 0.459);
+}
+
+.placeholderWrap::selection {
+	background-color: transparent;
 }
 
 .textbox {

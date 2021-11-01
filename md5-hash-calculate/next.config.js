@@ -3,10 +3,10 @@ const path = require('path')
 const withPreact = require('next-plugin-preact')
 
 const securityHeaders = [
-	{
-		key: 'X-DNS-Prefetch-Control',
-		value: 'on',
-	},
+	// {
+	// 	key: 'X-DNS-Prefetch-Control',
+	// 	value: 'on',
+	// },
 	{
 		key: 'Strict-Transport-Security',
 		value: 'max-age=63072000; includeSubDomains; preload',
@@ -30,18 +30,22 @@ const securityHeaders = [
 ]
 
 module.exports = withPreact({
-	// async headers() {
-	// 	return [
-	// 		{
-	// 			// Apply these headers to all routes in your application.
-	// 			source: '/(.*)',
-	// 			headers: securityHeaders,
-	// 		},
-	// 	];
-	// },
+	async headers() {
+		return [
+			{
+				// Apply these headers to all routes in your application.
+				source: '/(.*)',
+				headers: securityHeaders,
+			},
+		]
+	},
 	reactStrictMode: true,
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'styles')],
 	},
 	swcMinify: true,
+	// i18n: {
+	// 	locales: ['en-US'],
+	// 	defaultLocale: 'en-US',
+	// },
 })
