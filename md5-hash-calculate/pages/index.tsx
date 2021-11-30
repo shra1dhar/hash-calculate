@@ -57,6 +57,11 @@ Checksum Verifier, Generate MD5, Compute MD5, Calculate MD5"
 				<meta name="theme-color" content="#333333" />
 
 				<title>MD5 Hash Calculate</title>
+
+				<script
+					async
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9404552898254197"
+				/>
 			</Head>
 
 			<HomePage />

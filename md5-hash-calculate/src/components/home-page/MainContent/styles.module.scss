@@ -17,7 +17,6 @@ $text-color: #333;
 .heading {
 	text-align: center;
 	font-weight: normal;
-	padding: 20px;
 }
 
 @mixin activate-border() {
@@ -127,7 +126,7 @@ $para-line-height: 2.2rem;
 .intro,
 .advantages {
 	color: $text-color;
-	margin-top: 100px;
+	margin-top: 50px;
 	h3 {
 		font-size: $detail-header-size;
 	}

@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
-const withPreact = require('next-plugin-preact')
+// const withPreact = require('next-plugin-preact')
 
 const securityHeaders = [
 	// {
@@ -29,7 +29,7 @@ const securityHeaders = [
 	},
 ]
 
-module.exports = withPreact({
+module.exports = {
 	async headers() {
 		return [
 			{
@@ -43,9 +43,9 @@ module.exports = withPreact({
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'styles')],
 	},
-	swcMinify: true,
+	// swcMinify: true,
 	// i18n: {
 	// 	locales: ['en-US'],
 	// 	defaultLocale: 'en-US',
 	// },
-})
+}
