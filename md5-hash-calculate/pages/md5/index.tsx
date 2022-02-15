@@ -1,13 +1,12 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import HomePage from '../src/components/home-page'
+import React from 'react'
+import HomePage from '../../src/components/home-page'
+import { md5Data } from '../../src/store/constants'
+import CryptoContext from '../../src/store/Crypto-Context'
 
-/*
- * {@link - https://realfavicongenerator.net/}
- */
-const Home: NextPage = () => {
+const Md5 = () => {
 	return (
-		<div>
+		<CryptoContext value={md5Data}>
 			<Head>
 				<meta charSet="UTF-8" />
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -57,16 +56,11 @@ Checksum Verifier, Generate MD5, Compute MD5, Calculate MD5"
 				<meta name="theme-color" content="#333333" />
 
 				<title>MD5 Hash Calculate</title>
-
-				{/* <script
-					async
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9404552898254197"
-				/> */}
 			</Head>
 
 			<HomePage />
-		</div>
+		</CryptoContext>
 	)
 }
 
-export default Home
+export default Md5
