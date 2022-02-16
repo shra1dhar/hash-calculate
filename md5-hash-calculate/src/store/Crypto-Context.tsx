@@ -1,15 +1,32 @@
-import { createContext, FC } from 'react'
+import React, { createContext, useContext } from 'react'
+import { md5Data } from './constants'
 
-export const CryptoContext = createContext(null)
-
-import React from 'react'
-
-interface Props {
-	value: any
+export interface CryptoData {
+	head: {
+		applicationName: string
+		description: string
+		keywords: string
+		title: string
+	}
 }
 
-const CryproProvider: FC<Props> = ({ children, value }) => {
+export const CryptoContext = createContext<CryptoData>(md5Data)
+
+interface Props {
+	children: React.ReactNode
+	value: CryptoData
+}
+
+const CryproProvider = ({ children, value }: Props) => {
 	return <CryptoContext.Provider value={value}>{children}</CryptoContext.Provider>
 }
 
-export default CryproProvider
+const useCryptoData = () => {
+	const context = useContext<CryptoData>(CryptoContext)
+	if (context === undefined) {
+		throw new Error('useCryptoData must be used within a CryproProvider')
+	}
+	return context
+}
+
+export { CryproProvider, useCryptoData }

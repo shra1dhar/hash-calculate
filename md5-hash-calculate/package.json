@@ -12,15 +12,12 @@
 	"dependencies": {
 		"crypto-js": "^4.1.1",
 		"next": "^12.0.1",
-		"next-plugin-preact": "^3.0.6",
-		"preact": "^10.5.15",
-		"preact-render-to-string": "^5.1.19",
-		"react": "npm:@preact/compat",
-		"react-dom": "npm:@preact/compat",
-		"react-ssr-prepass": "npm:preact-ssr-prepass"
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
 	},
 	"devDependencies": {
 		"@types/crypto-js": "^4.0.2",
+		"@types/node": "^17.0.18",
 		"@types/react": "17.0.26",
 		"eslint": "7.32.0",
 		"eslint-config-next": "11.1.2",
