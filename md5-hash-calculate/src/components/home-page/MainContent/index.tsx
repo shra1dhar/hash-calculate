@@ -5,12 +5,15 @@ import FormContent from './FormContent'
 import styles from './styles.module.scss'
 import Advantages from './Details/Advantages'
 import HorizontalLongAd from '../../Ads/Desktop/HorizontalLong'
+import { useCryptoData } from '../../../store/Crypto-Context'
 
 const MainContent = () => {
+	const { main } = useCryptoData()
+
 	return (
 		<main className={styles.mainContent}>
 			<div className={styles.innerContent}>
-				<h1 className={styles.heading}>MD5 Hash Calculate ⚡️</h1>
+				<h1 className={styles.heading}>{main.heading}</h1>
 				<FormContent />
 				<br />
 				<HorizontalLongAd />

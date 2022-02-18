@@ -56,7 +56,7 @@ Checksum Verifier, Generate MD5, Compute MD5, Calculate MD5"
 				<meta name="msapplication-config" content="/md5/logo/browserconfig.xml" />
 				<meta name="theme-color" content="#333333" />
 
-				<title>MD5 Hash Calculate</title>
+				<title>MD5 Hash Calculator</title>
 
 				{/* <script
 					async

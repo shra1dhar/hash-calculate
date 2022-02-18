@@ -8,6 +8,13 @@ export interface CryptoData {
 		keywords: string
 		title: string
 	}
+	main: {
+		heading: string
+	}
+	navbar: {
+		title: string
+	}
+	hashAlgo: (val: string) => string
 }
 
 export const CryptoContext = createContext<CryptoData>(md5Data)
