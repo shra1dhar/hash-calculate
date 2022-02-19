@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<footer className={styles.foot}>
 			<div className={styles.innerFooter}>
-				<small>Copyright &copy; 2021, Hash Calculator</small>
+				<small>Copyright &copy; 2022, Hash Calculator</small>
 
 				{/* <ol>
 					<li>
@@ -15,6 +15,7 @@ const Footer = () => {
 					</li>
 				</ol> */}
 			</div>
+			w
 		</footer>
 	)
 }

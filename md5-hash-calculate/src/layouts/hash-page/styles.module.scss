@@ -16,6 +16,24 @@ $white-text: #f4f4f4;
 	align-items: center;
 }
 
+.navTitle {
+	margin-right: 60px;
+}
+
+.navElements {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.navLinks {
+	padding: 5px 15px;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	.nav {
 		padding-left: 20px;

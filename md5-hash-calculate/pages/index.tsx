@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import HomePage from '../src/components/home-page'
+import HomePage from '../src/layouts/home-page'
 
 /*
  * {@link - https://realfavicongenerator.net/}
@@ -14,26 +14,13 @@ const Home: NextPage = () => {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 				<meta property="og:type" content="website" />
-				<meta name="application-name" content="MD5 Hash Calculate" />
+				<meta name="application-name" content="Hash Tools" />
 
 				<meta name="google" content="notranslate" />
 
-				<meta
-					name="description"
-					content="MD5 online hash generator. Algorithm to generate checksum for md5 in the browser"
-				/>
-				<meta
-					property="og:description"
-					content="MD5 online hash generator. Algorithm to generate checksum for md5 in the browser"
-				/>
-				<meta
-					name="keywords"
-					content="MD5 Hash Calculator, MD5 Checker, MD5 Converter, MD5 
-Checksum Verifier, Generate MD5, Compute MD5, Calculate MD5"
-				/>
-				<meta property="og:title" content="MD5 Hash Calculator" />
-
-				<link rel="canonical" href="https://md5.hash-calculate.com" />
+				<meta name="description" content="Online tools" />
+				<meta property="og:description" content="Online tools" />
+				<meta property="og:title" content="Online Hash Tools" />
 
 				{/* Favicon */}
 				<link rel="apple-touch-icon" sizes="196x196" href="/md5/img/logo196.png" />
@@ -56,7 +43,7 @@ Checksum Verifier, Generate MD5, Compute MD5, Calculate MD5"
 				<meta name="msapplication-config" content="/md5/logo/browserconfig.xml" />
 				<meta name="theme-color" content="#333333" />
 
-				<title>MD5 Hash Calculator</title>
+				<title>Online Hash Tools</title>
 
 				{/* <script
 					async

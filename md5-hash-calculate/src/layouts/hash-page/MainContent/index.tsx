@@ -4,7 +4,7 @@ import Intro from './Details/Intro'
 import FormContent from './FormContent'
 import styles from './styles.module.scss'
 import Advantages from './Details/Advantages'
-import HorizontalLongAd from '../../Ads/Desktop/HorizontalLong'
+import HorizontalLongAd from '../../../components/Ads/Desktop/HorizontalLong'
 import { useCryptoData } from '../../../store/Crypto-Context'
 
 const MainContent = () => {

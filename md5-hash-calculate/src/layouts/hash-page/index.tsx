@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import MainContent from './MainContent'
 import Footer from './Footer'
 
-const HomePage = () => {
+const HashPage = () => {
 	return (
 		<div>
 			<Navbar />
@@ -13,4 +13,4 @@ const HomePage = () => {
 	)
 }
 
-export default HomePage
+export default HashPage
