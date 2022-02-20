@@ -17,7 +17,29 @@ const md5Data = {
 		title: 'MD5 Hash',
 	},
 	hashAlgo: (val: string) => MD5(val).toString(),
-} as const
+	overview: {
+		title: 'MD5 hash Generator',
+		body: [
+			'MD5 hash calculate gives you online MD5 generated hash values. It uses MD5 algorithm to calculate MD5 hash. The MD5 hash is calculated in real time. It can be clicked and copied easily.',
+			'You can verify the checksum also by pasting your string in the textbox.',
+		],
+	},
+	whatOfIt: {
+		title: 'What is MD5 ?',
+		body: [
+			'MD5 is a cryptographic hash algorithm that can be used to create a 128-bit string. Despite the known vulnerabilities MD5 is still popular. MD5 can be used to check integrity between files and string (text). It also has applications in security protocols like SSH, SSL, and IPSec.',
+			'Initially, MD5 hash calculating function was developed for use as a secure cryptographic hash algorithm for authenticating digital signatures. Lately MD5 has been deprecated. Other cryptographic functions like Sha1 are now gaining traction.',
+		],
+	},
+	advantages: {
+		title: 'Advantages of MD5',
+		body: [
+			'MD5 algorithm gives small 32 letter string which can be used as a unique value.',
+			'MD5 hash is used to store passwords in 128-bit form in some UNIX based systems.',
+			'MD5 can be used to verify the checksum easily. This allows to check integrity.',
+		],
+	},
+}
 
 const sha256Data = {
 	head: {
@@ -34,7 +56,30 @@ const sha256Data = {
 		title: 'SHA256 Hash',
 	},
 	hashAlgo: (val: string) => sha256(val).toString(),
-} as const
+	overview: {
+		title: 'SHA256 hash Generator',
+		body: [
+			'SHA256 hash calculate gives you online SHA256 generated hash values. It uses MD5 algorithm to calculate MD5 hash. The MD5 hash is calculated in real time. It can be clicked and copied easily.',
+			'You can verify the checksum also by pasting your string in the textbox.',
+		],
+	},
+	whatOfIt: {
+		title: 'What is SHA256 ?',
+		body: [
+			'SHA 256 is a part of the SHA 2 family of algorithms, where SHA stands for Secure Hash Algorithm.',
+			'Published in 2001, it was a joint effort between the NSA and NIST to introduce a successor to the SHA 1 family, which was slowly losing strength against brute force attacks.',
+			"SHA-256 Cryptographic Hash Algorithm. A cryptographic hash (sometimes called 'digest') is a kind of 'signature' for a text or a data file. SHA-256 generates an almost-unique 256-bit (32-byte) signature for a text.",
+		],
+	},
+	advantages: {
+		title: 'Advantages of MD5',
+		body: [
+			'SHA-256 is an industry standard that is trusted by leading public-sector agencies and used widely by technology leaders.',
+			'There are 2256 possible hash values when using SHA-256, which makes it nearly impossible for two different documents to coincidentally have the exact same hash value. (More on this in the following section).',
+			'The avalanche effect: Unlike some older hashing algorithms, even a very minor change to the original information completely changes the hash value—what is known as an avalanche effect.',
+		],
+	},
+}
 
 const hmacData = {
 	head: {
@@ -51,6 +96,29 @@ const hmacData = {
 		title: 'HMAC Hash',
 	},
 	hashAlgo: (val: string) => hmac(val, '').toString(),
-} as const
+	overview: {
+		title: 'HMAC hash Generator',
+		body: [
+			'HMAC hash calculate gives you online HMAC generated hash values. It uses MD5 algorithm to calculate MD5 hash. The MD5 hash is calculated in real time. It can be clicked and copied easily.',
+			'You can verify the checksum also by pasting your string in the textbox.',
+		],
+	},
+	whatOfIt: {
+		title: 'What is HMAC ?',
+		body: [
+			'HMAC algorithm stands for Hashed or Hash-based Message Authentication Code.',
+			'It is a result of work done on developing a MAC derived from cryptographic hash functions.',
+			'HMAC is a great resistance towards cryptanalysis attacks as it uses the Hashing concept twice. HMAC consists of twin benefits of Hashing and MAC and thus is more secure than any other authentication code.',
+		],
+	},
+	advantages: {
+		title: 'Advantages of MD5',
+		body: [
+			'HMACs are ideal for high-performance systems like routers due to the use of hash functions which are calculated and verified quickly unlike the public key systems.',
+			'Digital signatures are larger than HMACs, yet the HMACs provide comparably higher security.',
+			'HMACs are used in administrations where public key systems are prohibited.',
+		],
+	},
+}
 
 export { md5Data, sha256Data, hmacData }

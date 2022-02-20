@@ -1,15 +1,18 @@
 import React from 'react'
+import { useCryptoData } from '../../../../store/Crypto-Context'
 import styles from '../styles.module.scss'
 
 const Intro = () => {
+	const {
+		overview: { title, body },
+	} = useCryptoData()
+
 	return (
 		<section className={styles.intro} id="intro">
-			<h3>MD5 hash Generator</h3>
-			<p>
-				MD5 hash calculate gives you online MD5 generated hash values. It uses MD5 algorithm to calculate MD5 hash. The
-				MD5 hash is calculated in real time. It can be clicked and copied easily.
-			</p>
-			<p>You can verify the checksum also by pasting your string in the textbox.</p>
+			<h3>{title}</h3>
+			{body.map((val, idx) => (
+				<p key={idx}>{val}</p>
+			))}
 		</section>
 	)
 }

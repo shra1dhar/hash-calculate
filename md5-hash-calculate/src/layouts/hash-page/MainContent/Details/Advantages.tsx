@@ -1,14 +1,19 @@
 import React from 'react'
+import { useCryptoData } from '../../../../store/Crypto-Context'
 import styles from '../styles.module.scss'
 
 const Advantages = () => {
+	const {
+		advantages: { title, body },
+	} = useCryptoData()
+
 	return (
 		<section className={styles.advantages}>
-			<h3>Advantages of MD5</h3>
+			<h3>{title}</h3>
 			<ul>
-				<li>MD5 algorithm gives small 32 letter string which can be used as a unique value.</li>
-				<li>MD5 hash is used to store passwords in 128-bit form in some UNIX based systems.</li>
-				<li>MD5 can be used to verify the checksum easily. This allows to check integrity.</li>
+				{body.map((val, idx) => (
+					<li key={idx}>{val}</li>
+				))}
 			</ul>
 		</section>
 	)

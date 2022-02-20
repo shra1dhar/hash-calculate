@@ -7,7 +7,7 @@ import HomePage from '../src/layouts/home-page'
  */
 const Home: NextPage = () => {
 	return (
-		<div>
+		<>
 			<Head>
 				<meta charSet="UTF-8" />
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -30,14 +30,14 @@ const Home: NextPage = () => {
 				<link rel="apple-touch-icon" sizes="72x72" href="/md5/logo/logo72.png" />
 				<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/md5/img/logo152.png" />
 
-				<link rel="icon" href="/md5/logo/icon.svg" sizes="any" type="image/svg+xml" />
+				{/* <link rel="icon" href="/md5/logo/icon.svg" sizes="any" type="image/svg+xml" /> */}
 
 				<link rel="icon" type="image/png" sizes="32x32" href="/md5/logo/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/md5/logo/favicon-16x16.png" />
 
 				{/* <link rel="manifest" href="/md5/logo/site.webmanifest" /> */}
 				<link rel="mask-icon" href="/md5/logo/safari-pinned-tab.svg" color="#5bbad5" />
-				<link rel="shortcut icon" href="/md5/logo/favicon.ico" />
+				{/* <link rel="shortcut icon" href="/md5/logo/favicon.ico" /> */}
 
 				<meta name="msapplication-TileColor" content="#da532c" />
 				<meta name="msapplication-config" content="/md5/logo/browserconfig.xml" />
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 			</Head>
 
 			<HomePage />
-		</div>
+		</>
 	)
 }
 

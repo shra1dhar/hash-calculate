@@ -1,6 +1,11 @@
 import React, { createContext, useContext } from 'react'
 import { md5Data } from './constants'
 
+interface Content {
+	title: string
+	body: string[]
+}
+
 export interface CryptoData {
 	head: {
 		applicationName: string
@@ -15,6 +20,9 @@ export interface CryptoData {
 		title: string
 	}
 	hashAlgo: (val: string) => string
+	overview: Content
+	whatOfIt: Content
+	advantages: Content
 }
 
 export const CryptoContext = createContext<CryptoData>(md5Data)

@@ -8,7 +8,6 @@ const CommonHeadTag = () => {
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 			<meta property="og:type" content="website" />
-			<meta name="google" content="notranslate" />
 
 			{/* Favicon */}
 			<link rel="apple-touch-icon" sizes="196x196" href="/md5/img/logo196.png" />
