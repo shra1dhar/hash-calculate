@@ -1,6 +1,7 @@
 import MD5 from 'crypto-js/md5'
 import sha256 from 'crypto-js/sha256'
 import hmac from 'crypto-js/hmac-sha256'
+import base64 from 'crypto-js/enc-base64url'
 
 const md5Data = {
 	head: {
@@ -59,7 +60,7 @@ const sha256Data = {
 	overview: {
 		title: 'SHA256 hash Generator',
 		body: [
-			'SHA256 hash calculate gives you online SHA256 generated hash values. It uses MD5 algorithm to calculate MD5 hash. The MD5 hash is calculated in real time. It can be clicked and copied easily.',
+			'SHA256 hash calculate gives you online SHA256 generated hash values. It uses SHA256 algorithm to calculate SHA256 hash. The SHA256 hash is calculated in real time. It can be clicked and copied easily.',
 			'You can verify the checksum also by pasting your string in the textbox.',
 		],
 	},
@@ -72,7 +73,7 @@ const sha256Data = {
 		],
 	},
 	advantages: {
-		title: 'Advantages of MD5',
+		title: 'Advantages of SHA256',
 		body: [
 			'SHA-256 is an industry standard that is trusted by leading public-sector agencies and used widely by technology leaders.',
 			'There are 2256 possible hash values when using SHA-256, which makes it nearly impossible for two different documents to coincidentally have the exact same hash value. (More on this in the following section).',
@@ -112,11 +113,51 @@ const hmacData = {
 		],
 	},
 	advantages: {
-		title: 'Advantages of MD5',
+		title: 'Advantages of HMAC',
 		body: [
 			'HMACs are ideal for high-performance systems like routers due to the use of hash functions which are calculated and verified quickly unlike the public key systems.',
 			'Digital signatures are larger than HMACs, yet the HMACs provide comparably higher security.',
 			'HMACs are used in administrations where public key systems are prohibited.',
+		],
+	},
+}
+
+const base54encode = {
+	head: {
+		applicationName: 'Base64Encode Calculate',
+		description: 'Base64Encode online hash generator. Algorithm to generate checksum for Base64Encode in the browser',
+		keywords:
+			'Base64Encode Hash Calculator, Base64Encode Checker, Base64Encode Converter, Base64Encode Checksum Verifier, Generate Base64Encode, Compute Base64Encode, Calculate Base64Encode',
+		title: 'Base64Encode Hash Calculator',
+	},
+	main: {
+		heading: 'Base64Encode Hash Calculate ⚡️',
+	},
+	navbar: {
+		title: 'Base64Encode Hash',
+	},
+	hashAlgo: (val: string) => base64(val),
+	overview: {
+		title: 'Base64Encode hash Generator',
+		body: [
+			'Base64Encode hash calculate gives you online Base64Encode generated hash values. It uses Base64Encode algorithm to calculate Base64Encode hash. The Base64Encode hash is calculated in real time. It can be clicked and copied easily.',
+			'You can verify the checksum also by pasting your string in the textbox.',
+		],
+	},
+	whatOfIt: {
+		title: 'What is Base64Encode ?',
+		body: [
+			'Base64Encode algorithm stands for Hashed or Hash-based Message Authentication Code.',
+			'It is a result of work done on developing a MAC derived from cryptographic hash functions.',
+			'Base64Encode is a great resistance towards cryptanalysis attacks as it uses the Hashing concept twice. HMAC consists of twin benefits of Hashing and MAC and thus is more secure than any other authentication code.',
+		],
+	},
+	advantages: {
+		title: 'Advantages of Base64Encode',
+		body: [
+			'Base64Encode are ideal for high-performance systems like routers due to the use of hash functions which are calculated and verified quickly unlike the public key systems.',
+			'Digital signatures are larger than Base64Encode, yet the Base64Encode provide comparably higher security.',
+			'Base64Encode are used in administrations where public key systems are prohibited.',
 		],
 	},
 }
