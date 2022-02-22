@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Hash Tools",
+    "short_name": "Hash Tool",
+    "start_url": "/",
     "icons": [
         {
             "src": "/md5/logo/android-chrome-192x192.png",

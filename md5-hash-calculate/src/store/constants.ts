@@ -100,7 +100,7 @@ const hmacData = {
 	overview: {
 		title: 'HMAC hash Generator',
 		body: [
-			'HMAC hash calculate gives you online HMAC generated hash values. It uses MD5 algorithm to calculate MD5 hash. The MD5 hash is calculated in real time. It can be clicked and copied easily.',
+			'HMAC hash calculate gives you online HMAC generated hash values. It uses HMAC algorithm to calculate HMAC hash. The HMAC hash is calculated in real time. It can be clicked and copied easily.',
 			'You can verify the checksum also by pasting your string in the textbox.',
 		],
 	},
